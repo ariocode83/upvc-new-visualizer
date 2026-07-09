@@ -1,0 +1,14 @@
+body{font-family:'Plus Jakarta Sans',system-ui,Arial,sans-serif;background:#fff;color:#0f172a;margin:0}
+.container{max-width:980px;margin:0 auto;padding:24px}
+.site-header{background:#0F172A;color:#fff;padding:18px 0}
+.site-header h1{margin:0;display:inline-block}
+.site-header nav{float:right}
+.site-header nav a{color:#fff;margin-left:16px;text-decoration:none}
+.hero{padding:48px 0}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;background:#e5e7eb;color:#0f172a;text-decoration:none;margin-right:10px}
+.btn.primary{background:#D4A574;color:#fff}
+.features{display:flex;gap:16px;margin-top:24px}
+.feature{background:#f8fafc;padding:16px;border-radius:12px;flex:1}
+.testimonials{margin-top:28px}
+.testimonials blockquote{background:#f1f5f9;padding:12px;border-left:4px solid #D4A574}
+.site-footer{background:#0f172a;color:#fff;padding:20px;margin-top:40px}

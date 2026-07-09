@@ -1,0 +1,43 @@
+---
+layout: ../../src/layouts/DefaultLayout.astro
+---
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak & Konsultasi — Interior Akustik</title>
+    <meta name="description" content="Hubungi kami untuk konsultasi gratis dan estimasi biaya. Isi formulir singkat atau kirim email ke pak.ario@example.com." />
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="container">
+    <h1>Kontak & Konsultasi Gratis</h1>
+    <p>Isi formulir di bawah untuk mendapatkan konsultasi gratis dan estimasi.</p>
+    <form id="leadForm" method="POST" action="/api/lead">
+      <label>Nama<br><input name="nama" required></label><br>
+      <label>Telepon<br><input name="telepon" required></label><br>
+      <label>Email<br><input name="email" type="email" required></label><br>
+      <label>Jenis Proyek<br>
+        <select name="jenis_proyek">
+          <option>Rumah</option>
+          <option>Kantor</option>
+          <option>F&B</option>
+          <option>Studio</option>
+          <option>Lainnya</option>
+        </select>
+      </label><br>
+      <label>Luas Ruangan (m2)<br><input name="luas_ruangan_m2" type="number"></label><br>
+      <label>Kota<br><input name="kota"></label><br>
+      <label>Budget Range<br>
+        <select name="budget_range">
+          <option>&lt;50jt</option>
+          <option>50-150jt</option>
+          <option>150-300jt</option>
+          <option>&gt;300jt</option>
+        </select>
+      </label><br>
+      <label>Pesan<br><textarea name="pesan"></textarea></label><br>
+      <button type="submit" class="btn primary">Konsultasi Gratis & Dapatkan Penawaran</button>
+    </form>
+    <p>Email: <a href="mailto:pak.ario@example.com">pak.ario@example.com</a></p>
+  </body>
+</html>
